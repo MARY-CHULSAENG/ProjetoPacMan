@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: 'PacFont';
+    src: url(./font/PAC-FONT.TTF);
+  }
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 60px auto 0px;
+    width: 561px;
+    height: 651px;
+    border: 3px solid #1b3cd4;
+    border-radius: 0.5%;
+}
+
+.form {
+    position: absolute;
+    top: 60px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+p {
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+    font-family: 'PacFont';
+    color: #f08200;
+    font-size: 3em;
+}
+
+input {
+    position: relative;
+    padding: 15px;
+    background-color: black;
+    border: 2px solid #f08200;
+    border-radius: 8px;
+    max-width: 300px;
+    outline: none;
+    width: 65%;
+    top: 30px;
+    font-size: 1em;
+    color: white;
+}
+
+button {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+    border-radius: 8px;
+    max-width: 300px;
+    top: 30px;
+    cursor: pointer;
+    background-color:#f08200;
+    color: white;
+}
+
+button:hover {
+    background-color: #e50012;
+}
+
+.logo {
+    position: relative;
+    bottom: 40px;
+    width: 90%;
+    height: auto;
+}
+
+.Frame {
+    position: absolute;
+    margin: 24px;
+    width: 507px;
+    height: 597px;
+    border: 3px solid #1b3cd4;
+    border-radius: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame1 {
+    position: relative;
+    left: 270px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame1::after {
+    content:"";
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    width: 26px;
+    height: 3px;
+    background-color: black;
+}
+
+.frame2 {
+    position: relative;
+    top: 168px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame2::after {
+    content:"";
+    position: absolute;
+    left: -3px;
+    top: -1px;
+    width: 3px;
+    height: 26px;
+    background-color: black;
+}
+
+.frame3 {
+    position: relative;
+    top: 312px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame3::after {
+    content:"";
+    position: absolute;
+    left: -3px;
+    top: -0.5px;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
+
+.frame4 {
+    position: relative;
+    top: 408px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame4::after {
+    content:"";
+    position: absolute;
+    left: -3px;
+    top: -0.5px;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
+
+.frame5 {
+    position: relative;
+    top: 78px;
+    left: 507px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame5::after {
+    content:"";
+    position: absolute;
+    left: 24px;
+    top: -0.5px;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
+
+.frame6 {
+    position: relative;
+    top: 222px;
+    left: 507px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame6::after {
+    content:"";
+    position: absolute;
+    left: 24px;
+    top: -0.5px;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
+
+.frame7 {
+    position: relative;
+    top: 318px;
+    left: 507px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #1b3cd4;
+    border-radius: 2px;
+}
+
+.frame7::after {
+    content:"";
+    position: absolute;
+    left: 24px;
+    top: -0.5px;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
