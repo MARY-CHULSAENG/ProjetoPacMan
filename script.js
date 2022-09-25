@@ -5,7 +5,7 @@ const form = document.querySelector('.form')
 const Submit = (event) => {
     event.preventDefault();
     localStorage.setItem('player', input.value);
-    window.location = './game.html';
+    window.location = './Game/game.html';
 
 }
 
