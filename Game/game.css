@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url(../font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: '8-bit Arcade In';
+    src: url(../font/8-bit\ Arcade\ In.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main {
+    margin: 0px auto;
+    width: 570px;
+    height: 660px;
+}
+
+section {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white; 
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px; 
+    align-content: flex-end;
+}
+
+#GameOver {
+    position: relative;
+    bottom: 400px;
+    margin: 0px auto;
+    width: 569px;
+    height: 230px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+}
+
+#GameOver::before {
+    content: "GAME OVER";
+    position: relative;
+    bottom: 60px;
+    height: 50px;
+    color: white;
+    font-family: '8-bit Arcade In';
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-shadow: 0 1px 0 #1b3cd4,
+               0 2px 0 #1b3cd4,
+               0 3px 0 #1b3cd4,
+               0 4px 0 #1b3cd4,
+               0 5px 0 #1b3cd4,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#scoreGameOver {
+    width: 80px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#menuGameOver {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    cursor: pointer;
+    animation: scale-in-center 1s ease-out 3.8s backwards, pulsate-bck 1.3s ease-out 4s infinite ;
+}
+
+.btn:hover {
+    animation: pulsate-bck none;
+    color: #1b3cd4;
+}
+
+#YouWin {
+    position: relative;
+    margin: 0px auto;
+    bottom: 630px;
+    width: 569px;
+    height: 230px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#YouWin::before {
+    content: "YOU WIN";
+    position: relative;
+    bottom: 60px;
+    height: 50px;
+    color: #fbcc04;
+    font-family: '8-bit Arcade In';
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-shadow:
+    0 1px 0px #e50012,
+    1px 0 0px #f08200,
+    1px 2px 1px #e50012,
+    2px 1px 1px #f08200,
+    2px 3px 2px #e50012,
+    3px 2px 2px #f08200,
+    3px 4px 2px #e50012,
+    4px 3px 3px #f08200,
+    4px 5px 3px #e50012,
+    5px 4px 2px #f08200,
+    5px 6px 2px #e50012,
+    6px 5px 2px #f08200,
+    6px 7px 1px #e50012,
+    7px 6px 1px #f08200,
+    7px 8px 0px #e50012,
+    8px 7px 0px #f08200;
+}
+
+#scoreWin {
+    width: 80px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #f08200;
+}
+
+#menuYouWin {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.btn2 {
+    background-color: transparent;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    cursor: pointer;
+    animation: scale-in-center 1s ease-out 3.8s backwards, pulsate-bck 1.3s ease-out 4s infinite ;
+}
+
+.btn2:hover {
+    animation: pulsate-bck none;
+    color: #fbcc04;
+}
+
+@keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+
+

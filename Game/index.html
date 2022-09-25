@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pac Man</title>
     <script defer src="game.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
     <link rel="shortcut icon" href="../img/Favicon.ico" />
 </head>
 <body>
@@ -35,6 +35,28 @@
     <canvas></canvas>
 
     </main>
+
+    <div id="GameOver">
+        <section id = "scoreGameOver">
+            <span>Score: </span>
+            <span id = "showScoreGameOver">0</span>
+        </section>
+        <span id = "menuGameOver">
+            <a href="index.html"><button  type ="submit"  class = "btn">Try Again</button></a>
+            <a href="../login.html"><button type ="submit"  class = "btn">Exit Game</button></a>
+        </span>
+    </div>
     
+    <div id="YouWin">
+        <section id = "scoreWin">
+            <span>Score: </span>
+            <span id = "showScoreWin">0</span>
+        </section>
+        <span id = "menuYouWin">
+            <a href="index.html"><button  type ="submit"  class = "btn2">New Game</button></a>
+            <a href="../login.html"><button type ="submit"  class = "btn2">Exit Game</button></a>
+        </span>
+    </div>
+
 </body>
 </html>

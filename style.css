@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url(./font/PressStart2P-Regular.ttf);
+}
 
 @font-face {
     font-family: 'PacFont';
@@ -41,6 +44,7 @@ p {
     font-family: 'PacFont';
     color: #f08200;
     font-size: 3em;
+    animation: change-color 1s steps(2, end) infinite both;
 }
 
 input {
@@ -72,6 +76,7 @@ button {
 button:hover {
     background-color: #e50012;
 }
+
 
 .logo {
     position: relative;
@@ -231,3 +236,13 @@ button:hover {
     height: 25px;
     background-color: black;
 }
+
+ @keyframes change-color{
+    0% {
+      color: #f08200;
+    }
+    100% {
+      color: #e50012;
+    }
+  }
+  

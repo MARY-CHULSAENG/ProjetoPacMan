@@ -4,9 +4,12 @@ const c = canvas.getContext('2d')
 const scoreEl = document.querySelector('#scoreEl')
 const timer = document.querySelector('#timerEl')
 const spanName = document.querySelector('#player')
+const showscoreGameOver = document.querySelector('#showScoreGameOver')
+const showScoreWin = document.querySelector('#showScoreWin')
 
 canvas.width = 570
 canvas.height = 660
+
 
 class Boundary {
     static width = 30
@@ -463,6 +466,7 @@ const startTimer = () => {
         else {
             clearInterval(this.loop)
             cancelAnimationFrame(animationId)
+            gameOver()
             console.log('You Lose')
         }
 
@@ -470,7 +474,17 @@ const startTimer = () => {
 }
 startTimer();
 
+function gameOver() {  
 
+    document.getElementById("GameOver").style.visibility = "visible";
+ };
+
+
+ function winGame() {
+
+    document.getElementById("YouWin").style.visibility = "visible";
+
+ }
 let animationId
 function animate() {
     animationId = requestAnimationFrame(animate)
@@ -570,6 +584,7 @@ function animate() {
             } else {
                 clearInterval(this.loop)
                 cancelAnimationFrame(animationId)
+                gameOver()
                 console.log('You Lose')
             }
         }
@@ -579,6 +594,7 @@ function animate() {
         console.log('You Win')     
         clearInterval(this.loop)                         //<--- condiçao para ganhar o jogo 
         cancelAnimationFrame(animationId)
+        winGame()
     }
 
     for (let i = powerUps.length - 1; 0 <= i; i--) {
@@ -618,6 +634,9 @@ function animate() {
             pellets.splice(i, 1)
             score += 10
             scoreEl.innerHTML = score
+            showscoreGameOver.innerHTML = score
+            showScoreWin.innerHTML = score
+
         }
     }
 
