@@ -7,3 +7,5 @@ Projeto em grupo da matéria Técnicas de Programação, do 2° Semestre do curs
 
 :fire: Jogue nossa versão do Pac Man aqui: https://mary-chulsaeng.github.io/ProjetoPacMan/
 
+(Use as teclas W, A, S e D para se movimentar no mapa)
+
